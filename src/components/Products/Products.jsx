@@ -47,31 +47,17 @@ export const Products = () => {
 return(
     <>
     {products.map((product) => (
-    <div className="container d-flex flex-column align-items-center">
-      
-      <div className="d-flex flex-sm-wrap">
+        <figure className="border border-1 p-3 d-flex flex-column m-2 mt-5 webProducts" key={product.id}>
 
-        <div className="border border-1 p-3 d-flex flex-column m-2 card" key={product.id}>
-
-            {/* <img src={product.img} alt={product.img} /> */}
-            <p>Nombre: {product.name}</p>
-            <p>Precio: {product.price}</p>
-            <p>Stock: {product.stock}</p>
-            {/* <p>Descripción: {product.description}</p> */}
+            <img src={product.img} alt={product.img} />
+            <figcaption>{product.name}</figcaption>
+            <p><span>Precio:</span> $USD {product.price}.</p>
+            <p><span>Stock:</span> {product.stock} Unidades.</p>
+            <p><span>Descripción:</span> {product.description}.</p>
 
             <button onClick={() => disscountStock(product)} className="btn btn-danger mt-2">Agregar al carrito</button>
-        </div>
-
-      </div>
-
-    </div>
+        </figure>
     ))}
     </>
 )
 }
-
-
-// const product = {
-//     id : resp.docs[0].id,
-//     ...resp.docs[0].data()
-// }

@@ -1,3 +1,4 @@
 body{
-    background-color: rgb(172, 172, 172);
+    background: linear-gradient(155deg, rgba(195,78,226,1) 0%, rgba(99,0,106,1) 35%, rgba(103,52,148,1) 65%, rgba(56,0,106,1) 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
