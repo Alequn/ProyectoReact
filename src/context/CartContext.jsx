@@ -6,13 +6,13 @@ export const CartContextProvider = ({ children }) => {
 
     const [cartProducts, setCartProducts] = useState([]);
 
-    const addProduct = (product, quantity) => {
-        const { name, price } = product;
+    const addProduct = (price, name, quantity, img) => {
         const newProduct = {
-            name,
-            price,
+            name: name,
+            price: price,
             quantity,
             subTotal: quantity * price,
+            img: img,
         };
 
         setCartProducts([...cartProducts, newProduct]);
@@ -20,9 +20,9 @@ export const CartContextProvider = ({ children }) => {
 
     const objetValue = {
         cartProducts,
-        addProduct
+        addProduct,
     }
 
-return <CartContext.Provider value={objetValue}> { children } </CartContext.Provider>
+return <CartContext.Provider value={objetValue}> { children } </CartContext.Provider>;
 
-}
+};

@@ -61,7 +61,7 @@ return(
             <button className="btn-danger" onClick={decrement}>-</button>
             </div>
 
-            <button className="btn btn-success mt-2" onClick={() => addProduct( {name, price}, count)}>Agregar al carrito</button>
+            <button className="btn btn-success mt-2" onClick={() => addProduct( product.price, name, count, product.img)}>Agregar al carrito</button>
 
           <a href="/">
             <button className="btn btn-danger mt-2">Volver</button>
