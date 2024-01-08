@@ -1,8 +1,0 @@
-.containerProducts{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.containerProducts figure{
-    width: 85%;
-}

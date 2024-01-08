@@ -8,7 +8,7 @@ import "./Cart.css"
 export const Cart = () => {
 
 
-    const { cartProducts } = useContext( CartContext );
+    const { cartProducts, removeProduct } = useContext( CartContext );
     console.log(cartProducts)
 
 
@@ -28,10 +28,9 @@ export const Cart = () => {
 
 
 
-<button className="btn btn-danger mt-2">Eliminar</button>
+<button className="btn btn-danger mt-2" onClick={() => removeProduct(product.name)}>Eliminar</button>
 </figure>
+))}
 
-
-            ))}
 </>
 )};
