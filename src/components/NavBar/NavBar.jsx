@@ -21,7 +21,7 @@ export const NavBar = () => {
                 <button className="btn btn-danger mx-2">Consolas</button>
             </NavLink>
 
-            <NavLink to="/category/console">
+            <NavLink to="/cart">
                 <img src="https://i.imgur.com/JRRWMsq.png" alt="carrito de compras" />
             </NavLink>
         </nav>

@@ -35,3 +35,15 @@ font-size: 1.2rem;
 .webProducts button{
     width: 100%;
 }
+
+.count{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+}
+
+.count button{
+width: 20%;
+margin: 0px 20px;
+}
